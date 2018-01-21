@@ -10,3 +10,10 @@
 *.o
 *.bin
 *.app
+
+# useless media files
+*/*/bin/data/sources
+
+
+# xcode
+*.xcodeproj
