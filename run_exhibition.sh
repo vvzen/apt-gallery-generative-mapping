@@ -1,5 +1,5 @@
 #!/bin/bash
-export POPUP_FOLDER=/Users/valerioviperino/Documents/Code/c++/openframeworks/of_v0.9.8_osx_release/apps/popup_exhibition
+export POPUP_FOLDER=.
 
 x=0
 #while :; do
