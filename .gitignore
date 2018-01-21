@@ -1,3 +1,9 @@
+# osx stuff
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
 
 # build files
 *.a
