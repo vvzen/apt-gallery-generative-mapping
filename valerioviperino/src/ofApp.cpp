@@ -36,17 +36,23 @@ void ofApp::setup(){
 }
 
 void ofApp::update(){
-	piMapper.update();
+    piMapper.update();
     sceneManager.update();
 
     // view fps on the window title
     // std::stringstream strm;
 	// strm << "fps: " << ofGetFrameRate();
     // ofSetWindowTitle(strm.str());
+    
+    if (vv_source->app_should_quit){
+	ofExit(0);
+    }
 
+    /*
     if (ofGetElapsedTimef() > APP_TIME_LIVE){
         ofExit(0);
     }
+    */
 }
 
 void ofApp::draw(){

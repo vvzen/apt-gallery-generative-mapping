@@ -6,6 +6,8 @@
 //--------------------------------------------------------------
 void VVSource::init_vars(){
 
+    app_should_quit = false;
+
     // initialise time at the start of source
     show_start_time = ofGetElapsedTimef();
     if (show_start_time >= EXHIBITION_TIME) show_start_time = ofGetElapsedTimef() - current_show_time;
@@ -857,6 +859,11 @@ void VVSource::drawColouredLines(float currentShowTime){
             }
         }
     }
+
+    if (bg_started_fade){
+   	app_should_quit = true;
+    }
+
     // we don't need this anymore
     // start the final fade out to black
     // if (bg_started_fade){

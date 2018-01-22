@@ -36,6 +36,7 @@ class VVSource : public ofx::piMapper::FboSource {
         // timing
         float show_start_time;
         float current_show_time;
+	bool app_should_quit;	
         
         // checkpoints related vars
         bool CHECKPOINT_1;
